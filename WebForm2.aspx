@@ -16,6 +16,11 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            background-image: url('EPCCFONDO.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            transition: background-image 1s ease, opacity 1s ease;
         }
 
         .container {
@@ -38,6 +43,57 @@
             margin-top: 10px;
             text-align: left;
             color: white;
+        }
+
+        .result-container {
+            margin-bottom: 10px;
+        }
+
+        .result-container label {
+            color: white;
+        }
+
+        .result-textbox {
+            width: 100%;
+            padding: 8px;
+            background-color: #0f3546;
+            color: #fff;
+            border: 1px solid #033548;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .result-textbox:focus {
+            outline: none;
+            border-color: #04AA6D;
+        }
+
+        .select-group-container {
+            margin-bottom: 10px;
+        }
+
+        .select-group-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .select-group-container select {
+            width: 100%;
+            padding: 8px;
+            background-color: #0f3546;
+            color: #fff;
+            border: 1px solid #033548;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            max-width: 250px;
+        }
+
+        .select-group-container select:focus {
+            outline: none;
+            border-color: #04AA6D;
         }
 
         .button-container {
@@ -91,16 +147,15 @@
                 <label>Grupo:</label>
                 <asp:TextBox ID="lblGrupo" runat="server" CssClass="result-textbox" ReadOnly="true"></asp:TextBox>
             </div>
-            <div>
+            <div class="select-group-container">
                 <label>Select Group:</label>
                 <asp:DropDownList ID="ddlGroup" runat="server">
-                    <asp:ListItem Text="A"></asp:ListItem>
-                    <asp:ListItem Text="B"></asp:ListItem>
-                    <asp:ListItem Text="C"></asp:ListItem>
+                    <asp:ListItem Text="Selecciona Grupo"></asp:ListItem>
                 </asp:DropDownList>
             </div>
             <div>
                 <asp:Button ID="btnHorario" runat="server" Text="Horarios" OnClick="btnVerHorario" CssClass="enviar-button" />
+                <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" OnClick="btnRegistrarAlumno" CssClass="enviar-button" />
             </div>
         </div>
     </form>

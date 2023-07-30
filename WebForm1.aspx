@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="PruebaTI.WebForm1" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Matriculas de laboratorio</title>
@@ -16,6 +15,11 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            background-image: url('EPCCFONDO.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            transition: background-image 1s ease, opacity 1s ease;
         }
 
         .container {
@@ -72,19 +76,33 @@
         }
     </style>
     <script type="text/javascript">
+        var images = [
+            'EPCCFONDO.png',
+            'EPCCFONDO2.png'
+        ];
+
+        var currentImage = 0;
+
+        function changeBackground() {
+            currentImage = (currentImage + 1) % images.length;
+            document.body.style.backgroundImage = "url('" + images[currentImage] + "')";
+        }
+
+        setInterval(changeBackground, 5000);
+
         function validar_numeros(event) {
             var numeros = event.KeyCode || event.which;
             var datos = document.getElementById('<%= txtCUI.ClientID %>');
             var cui = datos.value;
             if (numeros < 48 || numeros > 57) {
                 event.preventDefault();
-                alert("Solo se aceptan numeros");
-            }
-            else if (cui.length >= 8) {
+                alert("Solo se aceptan números.");
+            } else if (cui.length >= 8) {
                 event.preventDefault();
-                alert("Solo se acepta hasta 8 numeros");
+                alert("Solo se acepta hasta 8 números.");
             }
         }
+
         function validar_letras(event) {
             var letras = event.KeyCode || event.which;
             if ((letras < 65 || letras > 90) && (letras < 97 || letras > 122)) {
@@ -92,7 +110,7 @@
                 alert("Error, solo se permiten letras.");
             }
         }
-</script>
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">

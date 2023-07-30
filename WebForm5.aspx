@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="PruebaTI.WebForm3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm5.aspx.cs" Inherits="PruebaTI.WebForm5" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -119,67 +119,51 @@
       <tbody>
         <tr>
           <td>7:00 AM - 7:50 AM</td>
-          <td>Fundamentos de la Computacion</td>
           <td>Ingles Tecnico Profesional I</td>
-          <td>Metodologia del Trabajo Intelectual Universitario</td>
+          <td>Liderazgo y Oratoria</td>
           <td>Arte Computacional</td>
-          <td>Estructuras Discretas I</td>
+          <td>Ingles Tecnico Profesional I</td>
+          <td>Fundamentos de la Computacion</td>
         </tr>
         <tr>
           <td>7:50 AM - 8:40 AM</td>
-          <td>Fundamentos de la Computacion</td>
           <td>Ingles Tecnico Profesional I</td>
-          <td>Metodologia del Trabajo Intelectual Universitario</td>
+          <td>Liderazgo y Oratoria</td>
           <td>Arte Computacional</td>
-          <td>Estructuras Discretas I</td>
+          <td>Ingles Tecnico Profesional I</td>
+          <td>Fundamentos de la Computacion</td>
         </tr>
         <tr>
-            <td>8:50 AM - 9:40 AM</td>
-            <td>Razonamiento Logico Matematico</td>
-            <td>Fundamentos de la Computacion</td>
-            <td>Razonamiento Logico Matematico</td>
-            <td>Arte Computacional</td>
-            <td>Ingles Tecnico Profesional I</td>
+           <td>8:50 AM - 9:40 AM</td>
+           <td>Razonamiento Logico Matematico</td>
+           <td>Liderazgo y Oratoria</td>
+           <td>Razonamiento Logico Matematico</td>
+           <td>Estructuras Discretas I</td>
+           <td>Estructuras Discretas I</td>
         </tr>
         <tr>
-            <td>9:40 AM - 10:30 AM</td>
-            <td>Razonamiento Logico Matematico</td>
-            <td>Fundamentos de la Computacion</td>
-            <td>Razonamiento Logico Matematico</td>
-            <td>Arte Computacional</td>
-            <td>Ingles Tecnico Profesional I</td>
+           <td>9:40 AM - 10:30 AM</td>
+           <td>Razonamiento Logico Matematico</td>
+           <td></td>
+           <td>Razonamiento Logico Matematico</td>
+           <td>Estructuras Discretas I</td>
+           <td>Estructuras Discretas I</td>
         </tr>
         <tr>
-            <td>10:40 AM - 11:30 AM</td>
-            <td>Metodologia del Trabajo Intelectual Universitario</td>
-            <td></td>
-            <td>Estructuras Discretas I</td>
-            <td>Estructuras Discretas I</td>
-            <td></td>
+           <td>10:40 AM - 11:30 AM</td>
+           <td>Estructuras Discretas I</td>
+           <td>Fundamentos de la Computacion</td>
+           <td>Metodologia del Trabajo Intelectual Universitario</td>
+           <td>Fundamentos de la Computacion</td>
+           <td>Metodologia del Trabajo Intelectual Universitario</td>
         </tr>
         <tr>
-            <td>11:30 AM - 12:20 PM</td>
-            <td>Metodologia del Trabajo Intelectual Universitario</td>
-            <td></td>
-            <td>Estructuras Discretas I</td>
-            <td>Estructuras Discretas I</td>
-            <td>Liderazgo y Oratoria</td>
-        </tr>
-        <tr>
-            <td>12:20 PM - 13:10 PM</td>
-            <td></td>
-            <td></td>
-            <td>Fundamentos de la Computacion</td>
-            <td></td>
-            <td>Liderazgo y Oratoria</td>
-        </tr>
-        <tr>
-            <td>13:10 AM - 14:00 AM</td>
-            <td></td>
-            <td></td>
-            <td>Fundamentos de la Computacion</td>
-            <td></td>
-            <td>Liderazgo y Oratoria</td>
+           <td>11:30 AM - 12:20 PM</td>
+           <td>Estructuras Discretas I</td>
+           <td>Fundamentos de la Computacion</td>
+           <td>Metodologia del Trabajo Intelectual Universitario</td>
+           <td>Fundamentos de la Computacion</td>
+           <td>Metodologia del Trabajo Intelectual Universitario</td>
         </tr>
       </tbody>
     </table>
